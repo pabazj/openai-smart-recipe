@@ -69,7 +69,7 @@ export default function Home() {
               <article>
                 <h2 className={styles.chapterTitle}>Try your Magic Recipe</h2>
                 <p>
-                Do you want to try out something easy, cheap, quick, and delicious? First you'll have to choose ingredients.Then if you have any instructions don't forget to mention. And finally wait and see the magic recipe.
+                Do you want to try out something easy, cheap, quick, and delicious? First you have to choose ingredients.Then if you have any instructions do not forget to mention. And finally wait and see the magic recipe.
                 </p>
 
 
@@ -108,9 +108,9 @@ export default function Home() {
                   </div>
                 }
 
-                {error && <div className={styles.imageContainer}><Image className={styles.image} src={Error} /></div>}
+                {error && <div className={styles.imageContainer}><Image className={styles.image} src={Error} alt='error'/></div>}
                 {suggestion && <pre className={styles.resultContainer}>{suggestion}</pre>}
-                {suggestion?.length === 0 && !loading && <div className={styles.imageContainer}><Image className={styles.image} src={Chef} /></div>}
+                {suggestion?.length === 0 && !loading && <div className={styles.imageContainer}><Image className={styles.image} src={Chef} alt='chef'/></div>}
                 </div>
               </article>
               <footer>
